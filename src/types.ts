@@ -15,13 +15,13 @@ export interface OptionsFields {
 	changeChance: number
 	ghostChance: number
 	maxGhosts: number
-	oneAtATime: number | 'word'
-	glyphsFromText: boolean
-	mode: 'matching' | 'normal' | 'erase' | 'erase_smart' | 'clear'
+	oneAtATime: number | 'letter'
+	glyphsFromText: true
+mode: 'matching' | 'normal' | 'erase' | 'erase_smart' | 'clear'
 	html: boolean
 	letterize: boolean
 	endless: boolean
-	fps: number
+	fps: number 
 }
 
 export type AllCustomOptions = ModifyInterface<

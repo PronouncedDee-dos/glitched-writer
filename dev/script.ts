@@ -87,13 +87,9 @@ writer.addCallback('start', string => {
 
 // let queueIndex = 0
 const queue = [
-	'This is the only &#163; the <strong>only</strong> the begining',
-	'Something farely long',
-	'Something super mega long, omg!!',
-	'<b>This is</b> the\n<strong>MONEY</strong>: &#163;',
-	"Roget's 21st Century Thesaurus, Third Edition Copyright © 2013 by the Philip Lief Group.",
-	'Short String',
-	'Please,\n<i>say &colon; something</i>...',
+	'143 &#10; 551 <strong>8</strong> 9972',
+	'4534657901',
+	'Please',
 ]
 // writer.write(queue[0])
 async function afterFinish(string, data) {
@@ -108,13 +104,13 @@ async function afterFinish(string, data) {
 }
 
 // writer.queueWrite('.writer-texts', 1000, true)
-writer.queueWrite(queue, 1000, true)
+writer.queueWrite(queue, 10, true)
 
 inputEl.addEventListener(
 	'input',
 	debounce(() => {
 		writer.write(inputEl.value)
-	}, 500),
+	}, 50),
 )
 
 // textEl.addEventListener(

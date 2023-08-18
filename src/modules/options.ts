@@ -19,7 +19,7 @@ export default class Options {
 	charset!: string[]
 	space!: string
 	oneAtATime!: OptionsFields['oneAtATime']
-	maxGhosts!: number
+	maxGhosts!: number 
 
 	constructor(
 		writer: GlitchedWriter,
